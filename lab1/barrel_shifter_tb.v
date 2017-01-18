@@ -25,9 +25,7 @@
 module barrel_shifter_tb;
 
 	// Inputs
-	reg clk;
 	reg [7:0] d_in;
-	reg shift_dir;
 	reg [2:0] shift_amount;
 
 	// Outputs
@@ -35,27 +33,33 @@ module barrel_shifter_tb;
 
 	// Instantiate the Unit Under Test (UUT)
 	barrel_shifter uut (
-		.clk(clk), 
 		.d_in(d_in), 
-		.shift_dir(shift_dir), 
 		.shift_amount(shift_amount), 
 		.d_out(d_out)
 	);
 
 	initial begin
 		// Initialize Inputs
-		clk = 0;
 		d_in = 0;
-		shift_dir = 0;
 		shift_amount = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
         
-		// Add stimulus here
+		// Test to shift left by 1
 		d_in = 8'b01000000;
 		shift_amount = 1'd1;
-		shift_dir = 1; //shift left
+		
+		#100;
+		// New Test for shift left by 2
+		d_in = 8'b00010000;
+		shift_amount = 3'b010;
+		
+		#100;
+		// Final Test to shift left by 4
+		d_in = 8'b00100000;
+		shift_amount = 3'b100;
+		
 	end
       
 endmodule

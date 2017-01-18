@@ -19,21 +19,22 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module barrel_shifter(
-	input clk,
-	input rst,
 	input [7:0] d_in,
-	input shift_dir, //shift_dir =0 --> right, =1 --> left
 	input [2:0] shift_amount,
 	output reg [7:0] d_out
 );
 
-always @(posedge clk) begin
-	if (shift_dir == 1) begin 
-		case (shift_amount)
-			0 : d_out = d_in;
-			1 : d_out = {d_in[6:0], d_in[7]};
-		endcase
-	end
+always @* begin
+	case (shift_amount)
+		0 : d_out = d_in;
+		1 : d_out = {d_in[6:0], d_in[7]};
+		2 : d_out = {d_in[5:0], d_in[7:6]};
+		3 : d_out = {d_in[4:0], d_in[7:5]};
+		4 : d_out = {d_in[3:0], d_in[7:4]};
+		5 : d_out = {d_in[2:0], d_in[7:3]};
+		6 : d_out = {d_in[1:0], d_in[7:2]};
+		7 : d_out = 0;
+	endcase
 end 
 
 endmodule
