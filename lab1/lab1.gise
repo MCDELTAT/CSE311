@@ -100,6 +100,8 @@
     <transform xil_pn:end_ts="1484765635" xil_pn:in_ck="4974949516561048662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7888867901418208140" xil_pn:start_ts="1484765634">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="bi_directional_shift_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
