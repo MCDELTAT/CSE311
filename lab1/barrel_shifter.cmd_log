@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/home/aaron/Git Repos/CSE311/lab1/barrel_shifter.xst" -ofn "/home/aaron/Git Repos/CSE311/lab1/barrel_shifter.syr" 
