@@ -31,16 +31,37 @@ module bi_directional_shift(
 wire [7:0] pre_reverse;
 wire [7:0] l_d_out;
 wire [7:0] post_reverse;
+wire [7:0] mux1_out;
+//wire [7:0] mux2_out;
 
-bit_reverse pre_reverse (
+bit_reverse pre (
 	.d_in (d_in),
 	.d_out (pre_reverse)
 );
 
+mux2_1 mux1 (
+	.input1 (d_in),
+	.input2 (pre_reverse),
+	.select (shift_direction),
+	.selected_out (mux1_out)
+);
+
 left_barrel_shifter left_1 (
-	.d_in (d_in),
+	.d_in (mux1_out),
 	.shift_amount (shift_amount),
 	.d_out (l_d_out)
+);
+
+bit_reverse post (
+	.d_in (l_d_out),
+	.d_out (post_reverse)
+);
+
+mux2_1 mux2 (
+	.input1 (l_d_out),
+	.input2 (post_reverse),
+	.select (shift_direction),
+	.selected_out (shifter_out)
 );
 
 endmodule
