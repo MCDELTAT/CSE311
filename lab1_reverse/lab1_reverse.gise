@@ -40,6 +40,8 @@
     <transform xil_pn:end_ts="1484862197" xil_pn:in_ck="-2914570201486550214" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1484862197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="bit_reverse.v"/>
       <outfile xil_pn:name="bit_reverse_tb.v"/>
       <outfile xil_pn:name="left_barrel_shifter.v"/>
@@ -56,10 +58,12 @@
     <transform xil_pn:end_ts="1484768486" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3914145547730696973" xil_pn:start_ts="1484768486">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1484862197" xil_pn:in_ck="-2914570201486550214" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1484862197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="bit_reverse.v"/>
       <outfile xil_pn:name="bit_reverse_tb.v"/>
       <outfile xil_pn:name="left_barrel_shifter.v"/>
@@ -68,23 +72,21 @@
     <transform xil_pn:end_ts="1484862201" xil_pn:in_ck="-2914570201486550214" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2935016884669771589" xil_pn:start_ts="1484862197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="bit_reverse_tb_beh.prj"/>
-      <outfile xil_pn:name="bit_reverse_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1484862201" xil_pn:in_ck="-6864590701784204706" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6185561370958134110" xil_pn:start_ts="1484862201">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="bit_reverse_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

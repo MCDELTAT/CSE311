@@ -74,10 +74,12 @@
     <transform xil_pn:end_ts="1484764378" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="229409161443696018" xil_pn:start_ts="1484764378">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1484765630" xil_pn:in_ck="2560465320904532907" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1484765630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="barrel_shifter.v"/>
       <outfile xil_pn:name="barrel_shifter_tb.v"/>
       <outfile xil_pn:name="bi_directional_shift.v"/>
@@ -88,23 +90,21 @@
     <transform xil_pn:end_ts="1484765634" xil_pn:in_ck="2560465320904532907" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6296075022575050769" xil_pn:start_ts="1484765630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="bi_directional_shift_tb_beh.prj"/>
-      <outfile xil_pn:name="bi_directional_shift_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
     <transform xil_pn:end_ts="1484765635" xil_pn:in_ck="4974949516561048662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7888867901418208140" xil_pn:start_ts="1484765634">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="bi_directional_shift_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1484099701" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1484099701">
       <status xil_pn:value="SuccessfullyRun"/>
