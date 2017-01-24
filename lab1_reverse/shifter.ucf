@@ -1,0 +1,31 @@
+##-----------------------------------------------------------------
+## Switches on the SPARTAN3 Board
+##-----------------------------------------------------------------
+NET "d_in<7>" LOC = "K13";
+NET "d_in<6>" LOC = "K14";
+NET "d_in<5>" LOC = "J13";
+NET "d_in<4>" LOC = "J14";
+NET "d_in<3>" LOC = "H13";
+NET "d_in<2>" LOC = "H14";
+NET "d_in<1>" LOC = "G12";
+NET "d_in<0>" LOC = "F12";
+
+##-----------------------------------------------------------------
+## Push buttons on the SPARTAN3 Board
+##-----------------------------------------------------------------
+NET "shift_direction" LOC = "L14";
+NET "shift_amount<2>" LOC = "L13";
+NET "shift_amount<1>" LOC = "M14";
+NET "shift_amount<0>" LOC = "M13";
+
+#-----------------------------------------------------------------
+# LEDs on the SPARTAN3 Board
+#-----------------------------------------------------------------
+NET "shifter_out<7>" LOC = "P11";
+NET "shifter_out<6>" LOC = "P12";
+NET "shifter_out<5>" LOC = "N12";
+NET "shifter_out<4>" LOC = "P13";
+NET "shifter_out<3>" LOC = "N14";
+NET "shifter_out<2>" LOC = "L12";
+NET "shifter_out<1>" LOC = "P14";
+NET "shifter_out<0>" LOC = "K12";
