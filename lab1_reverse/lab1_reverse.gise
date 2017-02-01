@@ -22,51 +22,75 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab1_reverse.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bi_directional_shift_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="bi_directional_shift.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="bi_directional_shift.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="bi_directional_shift.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="bi_directional_shift.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="bi_directional_shift.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="bi_directional_shift.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="bi_directional_shift.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="bi_directional_shift.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="bi_directional_shift.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="bi_directional_shift.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="bi_directional_shift.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="bi_directional_shift.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="bi_directional_shift.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bi_directional_shift.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="bi_directional_shift.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="bi_directional_shift.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="bi_directional_shift.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="bi_directional_shift.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="bi_directional_shift.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="bi_directional_shift.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="bi_directional_shift.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="bi_directional_shift.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="bi_directional_shift.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bi_directional_shift_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="bi_directional_shift_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bi_directional_shift_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bi_directional_shift_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="bi_directional_shift_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="bi_directional_shift_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bi_directional_shift_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bi_directional_shift_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="bi_directional_shift_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="bi_directional_shift_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bi_directional_shift_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bi_directional_shift_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="bi_directional_shift_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bi_directional_shift_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bi_directional_shift_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="bi_directional_shift_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bit_reverse_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="bi_directional_shift_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bi_directional_shift_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bit_reverse_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="bit_reverse_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux2_1_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux2_1_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1484768486" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1484768486">
+    <transform xil_pn:end_ts="1485878369" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1485878369">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1485209687" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1485209687">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="bi_directional_shift.v"/>
-      <outfile xil_pn:name="bi_directional_shift_tb.v"/>
-      <outfile xil_pn:name="bit_reverse.v"/>
-      <outfile xil_pn:name="bit_reverse_tb.v"/>
-      <outfile xil_pn:name="left_barrel_shifter.v"/>
-      <outfile xil_pn:name="left_barrel_shifter_tb.v"/>
-      <outfile xil_pn:name="mux2_1.v"/>
-      <outfile xil_pn:name="mux2_1_tb.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1485209510" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6429737606628977121" xil_pn:start_ts="1485209510">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1485209510" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8491881392106140289" xil_pn:start_ts="1485209510">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1485207772" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="229409161443696018" xil_pn:start_ts="1485207772">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1485209687" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1485209687">
+    <transform xil_pn:end_ts="1485878369" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1485878369">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="bi_directional_shift.v"/>
@@ -78,7 +102,31 @@
       <outfile xil_pn:name="mux2_1.v"/>
       <outfile xil_pn:name="mux2_1_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1485209691" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6296075022575050769" xil_pn:start_ts="1485209687">
+    <transform xil_pn:end_ts="1485878942" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6429737606628977121" xil_pn:start_ts="1485878942">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485878942" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6283851907245771673" xil_pn:start_ts="1485878942">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485878369" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2457281571936940995" xil_pn:start_ts="1485878369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485878369" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1485878369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="bi_directional_shift.v"/>
+      <outfile xil_pn:name="bi_directional_shift_tb.v"/>
+      <outfile xil_pn:name="bit_reverse.v"/>
+      <outfile xil_pn:name="bit_reverse_tb.v"/>
+      <outfile xil_pn:name="left_barrel_shifter.v"/>
+      <outfile xil_pn:name="left_barrel_shifter_tb.v"/>
+      <outfile xil_pn:name="mux2_1.v"/>
+      <outfile xil_pn:name="mux2_1_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1485878943" xil_pn:in_ck="8312446240454874998" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8314843108200228866" xil_pn:start_ts="1485878942">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -90,12 +138,126 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1485209691" xil_pn:in_ck="154064350625697764" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7888867901418208140" xil_pn:start_ts="1485209691">
+    <transform xil_pn:end_ts="1485878944" xil_pn:in_ck="-718213808993411113" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4053041958483936159" xil_pn:start_ts="1485878943">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="bi_directional_shift_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1159598517878373124" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2457281571936940995" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2811840329127822412" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1110319057727724918" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228962" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-256334800535732793" xil_pn:start_ts="1485228962">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230356" xil_pn:in_ck="4569558874763736753" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="6345396546279942941" xil_pn:start_ts="1485230351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.lso"/>
+      <outfile xil_pn:name="bi_directional_shift.ngc"/>
+      <outfile xil_pn:name="bi_directional_shift.ngr"/>
+      <outfile xil_pn:name="bi_directional_shift.prj"/>
+      <outfile xil_pn:name="bi_directional_shift.stx"/>
+      <outfile xil_pn:name="bi_directional_shift.syr"/>
+      <outfile xil_pn:name="bi_directional_shift.xst"/>
+      <outfile xil_pn:name="bi_directional_shift_tb_beh.prj"/>
+      <outfile xil_pn:name="bi_directional_shift_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1485228967" xil_pn:in_ck="181110551569251681" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2771928925213424375" xil_pn:start_ts="1485228967">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230359" xil_pn:in_ck="8509764803015083644" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="9126674486907688731" xil_pn:start_ts="1485230356">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.bld"/>
+      <outfile xil_pn:name="bi_directional_shift.ngd"/>
+      <outfile xil_pn:name="bi_directional_shift_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230362" xil_pn:in_ck="8560306909528810461" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3855906223012716089" xil_pn:start_ts="1485230359">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.pcf"/>
+      <outfile xil_pn:name="bi_directional_shift_map.map"/>
+      <outfile xil_pn:name="bi_directional_shift_map.mrp"/>
+      <outfile xil_pn:name="bi_directional_shift_map.ncd"/>
+      <outfile xil_pn:name="bi_directional_shift_map.ngm"/>
+      <outfile xil_pn:name="bi_directional_shift_map.xrpt"/>
+      <outfile xil_pn:name="bi_directional_shift_summary.xml"/>
+      <outfile xil_pn:name="bi_directional_shift_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230366" xil_pn:in_ck="4353999430782406486" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1485230362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.ncd"/>
+      <outfile xil_pn:name="bi_directional_shift.pad"/>
+      <outfile xil_pn:name="bi_directional_shift.par"/>
+      <outfile xil_pn:name="bi_directional_shift.ptwx"/>
+      <outfile xil_pn:name="bi_directional_shift.unroutes"/>
+      <outfile xil_pn:name="bi_directional_shift.xpi"/>
+      <outfile xil_pn:name="bi_directional_shift_pad.csv"/>
+      <outfile xil_pn:name="bi_directional_shift_pad.txt"/>
+      <outfile xil_pn:name="bi_directional_shift_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230369" xil_pn:in_ck="-8709566416924959880" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1485230366">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.bgn"/>
+      <outfile xil_pn:name="bi_directional_shift.bit"/>
+      <outfile xil_pn:name="bi_directional_shift.drc"/>
+      <outfile xil_pn:name="bi_directional_shift.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230371" xil_pn:in_ck="-8709566416924972734" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1485230369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485230366" xil_pn:in_ck="1888748849716870617" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1485230365">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="bi_directional_shift.twr"/>
+      <outfile xil_pn:name="bi_directional_shift.twx"/>
     </transform>
   </transforms>
 
