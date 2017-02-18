@@ -1,0 +1,27 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/aaron/Git Repos/CSE311/lab1_reverse/bi_directional_shift_tb_isim_beh.exe -prj /home/aaron/Git Repos/CSE311/lab1_reverse/bi_directional_shift_tb_beh.prj work.bi_directional_shift_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/aaron/Git Repos/CSE311/lab1_reverse/mux2_1.v" into library work
+Analyzing Verilog file "/home/aaron/Git Repos/CSE311/lab1_reverse/left_barrel_shifter.v" into library work
+Analyzing Verilog file "/home/aaron/Git Repos/CSE311/lab1_reverse/bit_reverse.v" into library work
+Analyzing Verilog file "/home/aaron/Git Repos/CSE311/lab1_reverse/bi_directional_shift.v" into library work
+Analyzing Verilog file "/home/aaron/Git Repos/CSE311/lab1_reverse/bi_directional_shift_tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94664 KB
+Fuse CPU Usage: 3160 ms
+Compiling module bit_reverse
+Compiling module mux2_1
+Compiling module left_barrel_shifter
+Compiling module bi_directional_shift
+Compiling module bi_directional_shift_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 6 Verilog Units
+Built simulation executable /home/aaron/Git Repos/CSE311/lab1_reverse/bi_directional_shift_tb_isim_beh.exe
+Fuse Memory Usage: 654872 KB
+Fuse CPU Usage: 3190 ms
+GCC CPU Usage: 720 ms

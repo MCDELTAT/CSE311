@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/aaron/Git Repos/CSE311/lab3/car_detector_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="car_detector_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/car_detector_tb/car_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">car_count[13:0]</obj_property>
+      <obj_property name="ObjectShortName">car_count[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/res" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">res</obj_property>
+      <obj_property name="ObjectShortName">res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/sensorA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sensorA</obj_property>
+      <obj_property name="ObjectShortName">sensorA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/sensorB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sensorB</obj_property>
+      <obj_property name="ObjectShortName">sensorB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/uut/increase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase</obj_property>
+      <obj_property name="ObjectShortName">increase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/uut/decrease" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decrease</obj_property>
+      <obj_property name="ObjectShortName">decrease</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/uut/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/car_detector_tb/uut/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+</wave_config>

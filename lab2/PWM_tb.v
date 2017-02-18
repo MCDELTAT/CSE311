@@ -48,16 +48,16 @@ module PWM_tb;
       
 		// Start clock
 		forever begin
-			#10 clk=~clk;
+			#5 clk=~clk;
 		end		
 	end
 	
 	initial begin
-		#100;
+		#1000;
 		// 25% Duty-cycle
 		duty_cycle = 4'b0011;
 
-		#100;
+		#1000;
 		duty_cycle = 4'b0111;
 	end
       

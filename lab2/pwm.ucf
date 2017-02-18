@@ -1,0 +1,30 @@
+##------------------------------------
+## Seven Segment Display Definition
+##------------------------------------
+NET "sevenSegData<7>" LOC = "E14";
+NET "sevenSegData<6>" LOC = "G13";
+NET "sevenSegData<5>" LOC = "N15";
+NET "sevenSegData<4>" LOC = "P15";
+NET "sevenSegData<3>" LOC = "R16";
+NET "sevenSegData<2>" LOC = "F13";
+NET "sevenSegData<1>" LOC = "N16";
+NET "sevenSegData<0>" LOC = "P16";
+
+##-----------------------------------------------------------------
+## Switches on the SPARTAN3 Board
+##-----------------------------------------------------------------
+NET "duty_cycle<3>" LOC = "K13";
+NET "duty_cycle<2>" LOC = "K14";
+NET "duty_cycle<1>" LOC = "J13";
+NET "duty_cycle<0>" LOC = "J14";
+
+#-----------------------------------------------------------------
+# LEDs on the SPARTAN3 Board
+#-----------------------------------------------------------------
+NET "pwm" LOC = "K12";
+
+#Segment Selectors (Enable)
+NET "an[3]" LOC = "E13";
+NET "an[2]" LOC = "F14";
+NET "an[1]" LOC = "G14";
+NET "an[0]" LOC = "D14";

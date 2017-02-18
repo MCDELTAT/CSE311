@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    23:03:35 01/31/2017 
+// Create Date:    10:17:38 02/01/2017 
 // Design Name: 
-// Module Name:    freq_divider 
+// Module Name:    mux4_1 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,25 +18,22 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module freq_divider(
-    input wire clk,
-	 output reg new_clk
+module mux4_1(
+	input wire [3:0] input1,
+	input wire [3:0] input2,
+	input wire [3:0] input3,
+	input wire [3:0] input4,
+	input wire [1:0] select,
+	output reg [3:0] selected_out
 );
 
-reg [3:0] count;
+always@* 
+	case(select)
+		2'b00 : selected_out = input1;
+		2'b01 : selected_out = input2;
+		2'b10 : selected_out = input3;
+		2'b11 : selected_out = input4;
+	endcase
 
-initial begin
-	count = 0;
-end
-
-always@(posedge clk)
-	begin
-		count <= count+1;
-	end
-
-always@*
-	begin
-		new_clk = (count==0) ? 1:0;
-	end	
 
 endmodule

@@ -19,13 +19,18 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module PWM(
-	input wire clk,
+	input wire clk, reset,
 	input wire [3:0] duty_cycle,
-	output pwm
+	output wire [7:0] sevenSegData,
+	output pwm,
+	output [3:0] an
 );
 
 wire new_clock;
 wire [3:0] count;
+
+// make seven seg data = 2
+assign sevenSegData = 8'b00100101;
 
 freq_divider freq1 (
 	.clk (clk),
@@ -43,5 +48,11 @@ comparator comp1 (
 	.d_out (pwm)
 );
 
+decoder2_4 dec1 (
+	.clk (clk),
+	.reset (reset),
+	.pwm (pwm),
+	.an (an)
+);
 
 endmodule

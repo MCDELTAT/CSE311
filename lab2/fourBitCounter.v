@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    23:03:35 01/31/2017 
+// Create Date:    10:32:40 01/25/2017 
 // Design Name: 
-// Module Name:    freq_divider 
+// Module Name:    fourBitCounter 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,25 +18,17 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module freq_divider(
+module fourBitCounter(
     input wire clk,
-	 output reg new_clk
+	 input wire reset,
+	 output reg [3:0] counter_out
 );
 
-reg [3:0] count;
-
-initial begin
-	count = 0;
-end
-
-always@(posedge clk)
-	begin
-		count <= count+1;
+always @(posedge clk)
+	if (reset) begin
+		counter_out <= 4'b0 ;
+	end else if (enable) begin
+		counter_out <= counter_out + 1;
 	end
-
-always@*
-	begin
-		new_clk = (count==0) ? 1:0;
-	end	
 
 endmodule
