@@ -22,7 +22,7 @@ module car_detector(
 	input wire clk, res,
 	input wire sensorA,
 	input wire sensorB,
-	output reg [13:0] car_count
+	output reg [3:0] car_count
 );
 
 localparam abUnblocked=2'b00, aBlocked=2'b01, abBlocked=2'b10, bBlocked=2'b11;
