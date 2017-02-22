@@ -1,6 +1,5 @@
 // Listing 4.15
 module sevenSegValue (
-	input wire clk, reset,
 	input wire [3:0] d_in,
 	output reg [3:0] an,  // enable 1-out-of-4 asserted low
    output reg [7:0] sseg, // led segments

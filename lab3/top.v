@@ -58,8 +58,6 @@ car_detector count1(
 
 //instantiation of sevenSegValue controller
 sevenSegValue  brd1(
-	.clk (clk),
-	.reset (reset),
 	.d_in (counter),
 	.an (enable),
 	.sseg (sseg),

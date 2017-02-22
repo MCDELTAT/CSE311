@@ -88,3 +88,11 @@ lab1/isim/
 *.xmsgs
 
 *.cmd
+
+*.log
+
+lab3/planAhead_run_2/
+
+lab3/planAhead_run_1/
+
+*.debug
