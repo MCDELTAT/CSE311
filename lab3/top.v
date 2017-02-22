@@ -22,6 +22,8 @@ module top(
 	input wire clk, reset,
 	input wire sensorA,
 	input wire sensorB,
+	output wire sensorAdb,
+	output wire sensorBdb,
 	output wire [3:0] enable,  // enable 1-out-of-4 asserted low
    output wire [7:0] sseg, // led segments
 	output wire [3:0] leds
@@ -29,12 +31,28 @@ module top(
 
 wire [3:0] counter;
 
+// Debounce sensorA
+debouncer dbA (
+	.clk (clk),
+	.reset (reset),
+	.sw (sensorA),
+	.db (sensorAdb)
+);
+
+// Debounce sensorA
+debouncer dbB (
+	.clk (clk),
+	.reset (reset),
+	.sw (sensorB),
+	.db (sensorBdb)
+);
+
 //instantiation of car_detector
 car_detector count1(
 	.clk (clk),
 	.res (reset),
-	.sensorA (sensorA),
-	.sensorB (sensorB),
+	.sensorA (sensorAdb),
+	.sensorB (sensorBdb),
 	.car_count (counter)
 );
 
