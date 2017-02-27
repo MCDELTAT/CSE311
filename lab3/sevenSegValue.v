@@ -2,18 +2,12 @@
 module sevenSegValue (
 	input wire [3:0] d_in,
 	output reg [3:0] an,  // enable 1-out-of-4 asserted low
-   output reg [7:0] sseg, // led segments
-	output reg [3:0] leds
+  output reg [7:0] sseg // led segments
 );
 
-initial begin
-	leds = 0;
-end
-	
    // hex to seven-segment led display
    always @*
    begin
-		leds = d_in;
       case(d_in)
          4'b0000: sseg[7:0] = 8'b00000011;
          4'b0001: sseg[7:0] = 8'b10011111;

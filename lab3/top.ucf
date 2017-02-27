@@ -20,12 +20,6 @@ NET "enable<2>" LOC = "F14";
 NET "enable<1>" LOC = "G14";
 NET "enable<0>" LOC = "D14";
 
-# LEDS as counter duplicate
-NET "leds<3>" LOC = "P11";
-NET "leds<2>" LOC = "P12";
-NET "leds<1>" LOC = "N12";
-NET "leds<0>" LOC = "P13";
-
 # Switches as sensors
 NET "sensorA" LOC = "K13";
 NET "sensorB" LOC = "K14";

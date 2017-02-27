@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:44:38 02/19/2017 
-// Design Name: 
-// Module Name:    top 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    20:44:38 02/19/2017
+// Design Name:
+// Module Name:    top
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module top(
@@ -25,8 +25,7 @@ module top(
 	output wire sensorAdb,
 	output wire sensorBdb,
 	output wire [3:0] enable,  // enable 1-out-of-4 asserted low
-   output wire [7:0] sseg, // led segments
-	output wire [3:0] leds
+   output wire [7:0] sseg // led segments
 );
 
 wire [3:0] counter;
@@ -60,8 +59,7 @@ car_detector count1(
 sevenSegValue  brd1(
 	.d_in (counter),
 	.an (enable),
-	.sseg (sseg),
-	.leds (leds)
+	.sseg (sseg)
 );
 
 endmodule

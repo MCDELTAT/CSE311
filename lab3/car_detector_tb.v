@@ -31,7 +31,7 @@ module car_detector_tb;
 	reg sensorB;
 
 	// Outputs
-	wire [13:0] car_count;
+	wire [3:0] car_count;
 
 	// Instantiate the Unit Under Test (UUT)
 	car_detector uut (
