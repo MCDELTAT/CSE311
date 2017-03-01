@@ -1,0 +1,31 @@
+##----------------------------------------
+## Clock
+##----------------------------------------
+NET "clk"    LOC = "T9";
+
+# Switches as count input
+NET "sw<4>" LOC = "K13"; //wrong
+NET "sw<3>" LOC = "K13";
+NET "sw<2>" LOC = "K14";
+NET "sw<1>" LOC = "K13"; //change
+NET "sw<0>" LOC = "K14"; //change
+
+##------------------------------------
+## Seven Segment Display Definition
+##------------------------------------
+NET "sseg<7>" LOC = "E14";
+NET "sseg<6>" LOC = "G13";
+NET "sseg<5>" LOC = "N15";
+NET "sseg<4>" LOC = "P15";
+NET "sseg<3>" LOC = "R16";
+NET "sseg<2>" LOC = "F13";
+NET "sseg<1>" LOC = "N16";
+NET "sseg<0>" LOC = "P16";
+
+NET "enable<3>" LOC = "E13";
+NET "enable<2>" LOC = "F14";
+NET "enable<1>" LOC = "G14";
+NET "enable<0>" LOC = "D14";
+
+# LED as done_tick
+NET "leds<0>" LOC = "P13";
